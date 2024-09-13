@@ -1,30 +1,49 @@
 body {
-  background-color: #d1d3d4;
+  background-color: #fff;
+}
+
+.main {
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  background-color: #ccc;
+  padding: 20px;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  max-width: 500px;
-  background-color: #1d3465;
-  border-radius: 10px;
+  /* background-color: #1d3465; */
 }
 
-form>* {
+form > * {
   padding: 10px;
   margin: 10px;
   border-radius: 10px;
   border: none;
+  background-color: #fff;
+}
+
+.main form .mode{
+  text-align: left;
+}
+
+.main form .mode .title{
+  margin-bottom: 10px;
+}
+
+.main form .mode .mode-option{
+  display: flex;
+  justify-content: space-between;
 }
 
 form button {
-  background-color: blue;
+  background-color: #1d3465;
   color: #fff;
   cursor: pointer;
   border: none;
 }
-
 
 form button:hover {
   background-color: rgb(24, 24, 153);

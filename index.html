@@ -1,30 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1"
+    />
+    <link rel="shortcut icon" href="favicon.png" type="image/png" />
+    <title>ROBOTICS CLUB</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-  <link rel="shortcut icon" href="favicon.png" type="image/png" />
-  <title>ROBOTICS CLUB</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-  <center>
-    <img src="favicon.png" alt="" width="100px" srcset="">
-    <h1>ROBOTICS CLUB</h1>
-    <form name="Robotics" netlify>
-      <input type="text" name="name" placeholder="Names" required autofocus />
-      <input type="email" name="email" placeholder="Email" required />
-      <textarea name="expectations" id="" cols="30" rows="5"
-        placeholder="What's your expectations from the Robotics Club" required></textarea>
-      <button type="submit">Submit</button>
-    </form>
-    <div class="developer">
-      Developer:
-      <a href="http://github.com/jennermaxim" target="_blank" rel="noopener noreferrer">Jenner Maxim</a>
-    </div>
-  </center>
-</body>
-
+  <body>
+    <center>
+      <div class="main">
+        <img src="favicon.png" alt="" width="100px" srcset="" />
+        <h1>ROBOTICS CLUB</h1>
+        <form name="Robotics" netlify>
+          <input
+            type="text"
+            name="name"
+            placeholder="Full Name"
+            required
+            autofocus
+          />
+          <input type="text" name="StudentID" placeholder="Student ID" />
+          <input type="email" name="email" placeholder="Email" required />
+          <select name="Faculty" id="">
+            <option value="">- Select your Faculty -</option>
+            <option value="Faculty of Science & Technology">
+              Faculty of Science & Technology
+            </option>
+            <option value="Faculty of Law">Faculty of Law</option>
+            <option value="Faculty of Socio-economic Sciences">
+              Faculty of Socio-economic Sciences
+            </option>
+            <option value="Faculty of Business and Management">
+              Faculty of Business and Management
+            </option>
+          </select>
+          <input type="text" name="Course" placeholder="Course" />
+          <select name="Gender" id="">
+            <option value="">- Select your Gender -</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+          <input type="text" name="Contact" placeholder="Phone Number" />
+          <div class="mode">
+            <div class="title">Mode of Study:</div>
+            <div class="mode-option">
+              <div>
+                <input type="radio" name="ModeOfStudy" value="Online" />
+                <label>Online Student</label>
+              </div>
+              <div>
+                <input type="radio" name="ModeOfStudy" value="Physical" />
+                <label>Campus Based Student</label>
+              </div>
+            </div>
+          </div>
+          <div class="mode">
+            <div class="title">Preffered Learning mode:</div>
+            <div class="mode-option">
+              <div>
+                <input
+                  type="radio"
+                  name="PrefferedModeOfLearning"
+                  value="Online"
+                />
+                <label>Online</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="PrefferedModeOfLearning"
+                  value="Physical"
+                />
+                <label>Physical</label>
+              </div>
+            </div>
+          </div>
+          <textarea
+            name="expectations"
+            id=""
+            cols="30"
+            rows="5"
+            placeholder="What's your expectations from the Robotics Club"
+            required
+          ></textarea>
+          <button type="submit">Submit</button>
+        </form>
+        <div class="developer">
+          Developer:
+          <a
+            href="http://github.com/jennermaxim"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Jenner Maxim</a
+          >
+        </div>
+      </div>
+    </center>
+  </body>
 </html>
